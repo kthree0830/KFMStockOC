@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B954381F1C3F3E001B9C53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954371F1C3F3E001B9C53 /* main.m */; };
+		04B9543B1F1C3F3F001B9C53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9543A1F1C3F3F001B9C53 /* AppDelegate.m */; };
+		04B9543E1F1C3F3F001B9C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9543D1F1C3F3F001B9C53 /* ViewController.m */; };
+		04B954411F1C3F3F001B9C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B9543F1F1C3F3F001B9C53 /* Main.storyboard */; };
+		04B954431F1C3F3F001B9C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B954421F1C3F3F001B9C53 /* Assets.xcassets */; };
+		04B954461F1C3F3F001B9C53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B954441F1C3F3F001B9C53 /* LaunchScreen.storyboard */; };
+		04B954501F1C41A8001B9C53 /* KFMSegmentMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9544F1F1C41A8001B9C53 /* KFMSegmentMenu.m */; };
+		04B954591F1C464A001B9C53 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954581F1C464A001B9C53 /* UIView+Extension.m */; };
+		04B9545D1F1C5B3E001B9C53 /* KFMChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9545C1F1C5B3E001B9C53 /* KFMChartViewController.m */; };
+		04B954661F1C805B001B9C53 /* FiveTrade.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B9545F1F1C805B001B9C53 /* FiveTrade.json */; };
+		04B954671F1C805B001B9C53 /* kLineForDay.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B954601F1C805B001B9C53 /* kLineForDay.json */; };
+		04B954681F1C805B001B9C53 /* kLineForMonth.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B954611F1C805B001B9C53 /* kLineForMonth.json */; };
+		04B954691F1C805B001B9C53 /* kLineForWeek.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B954621F1C805B001B9C53 /* kLineForWeek.json */; };
+		04B9546A1F1C805B001B9C53 /* SZ300033.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B954631F1C805B001B9C53 /* SZ300033.json */; };
+		04B9546B1F1C805B001B9C53 /* timeLineForDay.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B954641F1C805B001B9C53 /* timeLineForDay.json */; };
+		04B9546C1F1C805B001B9C53 /* timeLineForFiveday.json in Resources */ = {isa = PBXBuildFile; fileRef = 04B954651F1C805B001B9C53 /* timeLineForFiveday.json */; };
+		04B954701F1C8088001B9C53 /* KFMStockBasicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9546F1F1C8088001B9C53 /* KFMStockBasicInfoModel.m */; };
+		04B954741F1C8A73001B9C53 /* KFMTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954731F1C8A73001B9C53 /* KFMTimeLine.m */; };
+		04B954781F1C8DCA001B9C53 /* KFMTimeLineCoordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954771F1C8DCA001B9C53 /* KFMTimeLineCoordModel.m */; };
+		04B9547B1F1C8F2D001B9C53 /* KFMTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9547A1F1C8F2D001B9C53 /* KFMTimeLineModel.m */; };
+		04B9547F1F1C90CA001B9C53 /* KFMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9547E1F1C90CA001B9C53 /* KFMTheme.m */; };
+		04B954831F1CB3EB001B9C53 /* KFMKLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954821F1CB3EB001B9C53 /* KFMKLineModel.m */; };
+		04B9548A1F1CB64F001B9C53 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954891F1CB64F001B9C53 /* NSString+Category.m */; };
+		04B9548D1F1DF058001B9C53 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9548C1F1DF058001B9C53 /* NSDate+Category.m */; };
+		04B954901F1DFF1D001B9C53 /* KFMLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9548F1F1DFF1D001B9C53 /* KFMLandscapeViewController.m */; };
+		04B954931F1E0334001B9C53 /* KFMCAShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954921F1E0334001B9C53 /* KFMCAShapeLayer.m */; };
+		04B954961F1E0B76001B9C53 /* KFMKLineCoordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954951F1E0B76001B9C53 /* KFMKLineCoordModel.m */; };
+		04B954991F1EE43A001B9C53 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954981F1EE43A001B9C53 /* UIColor+Category.m */; };
+		04B9549D1F1EE4B2001B9C53 /* KFMKLineUpFrontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9549C1F1EE4B2001B9C53 /* KFMKLineUpFrontView.m */; };
+		04B954A01F1EF49C001B9C53 /* KFMKLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9549F1F1EF49C001B9C53 /* KFMKLineView.m */; };
+		04B954A31F1EF5B1001B9C53 /* KFMKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954A21F1EF5B1001B9C53 /* KFMKLine.m */; };
+		04B954A71F20AD77001B9C53 /* KFMStockBriefView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954A61F20AD77001B9C53 /* KFMStockBriefView.m */; };
+		04B954A91F20AD87001B9C53 /* KFMStockBriefView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B954A81F20AD87001B9C53 /* KFMStockBriefView.xib */; };
+		04B954AD1F21A359001B9C53 /* KFMKLineBriefView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954AC1F21A359001B9C53 /* KFMKLineBriefView.m */; };
+		04B954AF1F21A369001B9C53 /* KFMKLineBriefView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B954AE1F21A369001B9C53 /* KFMKLineBriefView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04B954331F1C3F3E001B9C53 /* KFMStockOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFMStockOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B954371F1C3F3E001B9C53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04B954391F1C3F3E001B9C53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04B9543A1F1C3F3F001B9C53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04B9543C1F1C3F3F001B9C53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04B9543D1F1C3F3F001B9C53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04B954401F1C3F3F001B9C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04B954421F1C3F3F001B9C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04B954451F1C3F3F001B9C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04B954471F1C3F3F001B9C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B9544E1F1C41A8001B9C53 /* KFMSegmentMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMSegmentMenu.h; sourceTree = "<group>"; };
+		04B9544F1F1C41A8001B9C53 /* KFMSegmentMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMSegmentMenu.m; sourceTree = "<group>"; };
+		04B954551F1C42E2001B9C53 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04B954571F1C464A001B9C53 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		04B954581F1C464A001B9C53 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		04B9545B1F1C5B3E001B9C53 /* KFMChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMChartViewController.h; sourceTree = "<group>"; };
+		04B9545C1F1C5B3E001B9C53 /* KFMChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMChartViewController.m; sourceTree = "<group>"; };
+		04B9545F1F1C805B001B9C53 /* FiveTrade.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FiveTrade.json; sourceTree = "<group>"; };
+		04B954601F1C805B001B9C53 /* kLineForDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kLineForDay.json; sourceTree = "<group>"; };
+		04B954611F1C805B001B9C53 /* kLineForMonth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kLineForMonth.json; sourceTree = "<group>"; };
+		04B954621F1C805B001B9C53 /* kLineForWeek.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kLineForWeek.json; sourceTree = "<group>"; };
+		04B954631F1C805B001B9C53 /* SZ300033.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SZ300033.json; sourceTree = "<group>"; };
+		04B954641F1C805B001B9C53 /* timeLineForDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeLineForDay.json; sourceTree = "<group>"; };
+		04B954651F1C805B001B9C53 /* timeLineForFiveday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeLineForFiveday.json; sourceTree = "<group>"; };
+		04B9546E1F1C8088001B9C53 /* KFMStockBasicInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMStockBasicInfoModel.h; sourceTree = "<group>"; };
+		04B9546F1F1C8088001B9C53 /* KFMStockBasicInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMStockBasicInfoModel.m; sourceTree = "<group>"; };
+		04B954721F1C8A73001B9C53 /* KFMTimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMTimeLine.h; sourceTree = "<group>"; };
+		04B954731F1C8A73001B9C53 /* KFMTimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMTimeLine.m; sourceTree = "<group>"; };
+		04B954761F1C8DCA001B9C53 /* KFMTimeLineCoordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMTimeLineCoordModel.h; sourceTree = "<group>"; };
+		04B954771F1C8DCA001B9C53 /* KFMTimeLineCoordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMTimeLineCoordModel.m; sourceTree = "<group>"; };
+		04B954791F1C8F2D001B9C53 /* KFMTimeLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMTimeLineModel.h; sourceTree = "<group>"; };
+		04B9547A1F1C8F2D001B9C53 /* KFMTimeLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMTimeLineModel.m; sourceTree = "<group>"; };
+		04B9547D1F1C90CA001B9C53 /* KFMTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMTheme.h; sourceTree = "<group>"; };
+		04B9547E1F1C90CA001B9C53 /* KFMTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMTheme.m; sourceTree = "<group>"; };
+		04B954811F1CB3EB001B9C53 /* KFMKLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLineModel.h; sourceTree = "<group>"; };
+		04B954821F1CB3EB001B9C53 /* KFMKLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLineModel.m; sourceTree = "<group>"; };
+		04B954881F1CB64F001B9C53 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		04B954891F1CB64F001B9C53 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		04B9548B1F1DF058001B9C53 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		04B9548C1F1DF058001B9C53 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		04B9548E1F1DFF1D001B9C53 /* KFMLandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMLandscapeViewController.h; sourceTree = "<group>"; };
+		04B9548F1F1DFF1D001B9C53 /* KFMLandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMLandscapeViewController.m; sourceTree = "<group>"; };
+		04B954911F1E0334001B9C53 /* KFMCAShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMCAShapeLayer.h; sourceTree = "<group>"; };
+		04B954921F1E0334001B9C53 /* KFMCAShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMCAShapeLayer.m; sourceTree = "<group>"; };
+		04B954941F1E0B76001B9C53 /* KFMKLineCoordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLineCoordModel.h; sourceTree = "<group>"; };
+		04B954951F1E0B76001B9C53 /* KFMKLineCoordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLineCoordModel.m; sourceTree = "<group>"; };
+		04B954971F1EE43A001B9C53 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		04B954981F1EE43A001B9C53 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		04B9549B1F1EE4B2001B9C53 /* KFMKLineUpFrontView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLineUpFrontView.h; sourceTree = "<group>"; };
+		04B9549C1F1EE4B2001B9C53 /* KFMKLineUpFrontView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLineUpFrontView.m; sourceTree = "<group>"; };
+		04B9549E1F1EF49C001B9C53 /* KFMKLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLineView.h; sourceTree = "<group>"; };
+		04B9549F1F1EF49C001B9C53 /* KFMKLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLineView.m; sourceTree = "<group>"; };
+		04B954A11F1EF5B1001B9C53 /* KFMKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLine.h; sourceTree = "<group>"; };
+		04B954A21F1EF5B1001B9C53 /* KFMKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLine.m; sourceTree = "<group>"; };
+		04B954A51F20AD77001B9C53 /* KFMStockBriefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMStockBriefView.h; sourceTree = "<group>"; };
+		04B954A61F20AD77001B9C53 /* KFMStockBriefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMStockBriefView.m; sourceTree = "<group>"; };
+		04B954A81F20AD87001B9C53 /* KFMStockBriefView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFMStockBriefView.xib; sourceTree = "<group>"; };
+		04B954AB1F21A359001B9C53 /* KFMKLineBriefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLineBriefView.h; sourceTree = "<group>"; };
+		04B954AC1F21A359001B9C53 /* KFMKLineBriefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLineBriefView.m; sourceTree = "<group>"; };
+		04B954AE1F21A369001B9C53 /* KFMKLineBriefView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFMKLineBriefView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B954301F1C3F3E001B9C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B9542A1F1C3F3E001B9C53 = {
+			isa = PBXGroup;
+			children = (
+				04B954351F1C3F3E001B9C53 /* KFMStockOC */,
+				04B954341F1C3F3E001B9C53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B954341F1C3F3E001B9C53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B954331F1C3F3E001B9C53 /* KFMStockOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B954351F1C3F3E001B9C53 /* KFMStockOC */ = {
+			isa = PBXGroup;
+			children = (
+				04B954AA1F21A342001B9C53 /* KLineBriefView */,
+				04B954A41F20AD60001B9C53 /* StockBriefView */,
+				04B9549A1F1EE45B001B9C53 /* KLine */,
+				04B9547C1F1C90B3001B9C53 /* Common */,
+				04B954711F1C8A37001B9C53 /* TimeLine */,
+				04B9546D1F1C8073001B9C53 /* Model */,
+				04B9545E1F1C805B001B9C53 /* SampleData */,
+				04B954561F1C464A001B9C53 /* Categray */,
+				04B9544D1F1C4188001B9C53 /* Segment */,
+				04B9545A1F1C5B1C001B9C53 /* ViewControllers */,
+				04B954391F1C3F3E001B9C53 /* AppDelegate.h */,
+				04B9543A1F1C3F3F001B9C53 /* AppDelegate.m */,
+				04B9543C1F1C3F3F001B9C53 /* ViewController.h */,
+				04B9543D1F1C3F3F001B9C53 /* ViewController.m */,
+				04B9543F1F1C3F3F001B9C53 /* Main.storyboard */,
+				04B954421F1C3F3F001B9C53 /* Assets.xcassets */,
+				04B954441F1C3F3F001B9C53 /* LaunchScreen.storyboard */,
+				04B954471F1C3F3F001B9C53 /* Info.plist */,
+				04B954361F1C3F3E001B9C53 /* Supporting Files */,
+				04B954551F1C42E2001B9C53 /* PrefixHeader.pch */,
+			);
+			path = KFMStockOC;
+			sourceTree = "<group>";
+		};
+		04B954361F1C3F3E001B9C53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B954371F1C3F3E001B9C53 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B9544D1F1C4188001B9C53 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				04B9544E1F1C41A8001B9C53 /* KFMSegmentMenu.h */,
+				04B9544F1F1C41A8001B9C53 /* KFMSegmentMenu.m */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		04B954561F1C464A001B9C53 /* Categray */ = {
+			isa = PBXGroup;
+			children = (
+				04B954971F1EE43A001B9C53 /* UIColor+Category.h */,
+				04B954981F1EE43A001B9C53 /* UIColor+Category.m */,
+				04B954571F1C464A001B9C53 /* UIView+Extension.h */,
+				04B954581F1C464A001B9C53 /* UIView+Extension.m */,
+				04B954881F1CB64F001B9C53 /* NSString+Category.h */,
+				04B954891F1CB64F001B9C53 /* NSString+Category.m */,
+				04B9548B1F1DF058001B9C53 /* NSDate+Category.h */,
+				04B9548C1F1DF058001B9C53 /* NSDate+Category.m */,
+			);
+			path = Categray;
+			sourceTree = "<group>";
+		};
+		04B9545A1F1C5B1C001B9C53 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B9545B1F1C5B3E001B9C53 /* KFMChartViewController.h */,
+				04B9545C1F1C5B3E001B9C53 /* KFMChartViewController.m */,
+				04B9548E1F1DFF1D001B9C53 /* KFMLandscapeViewController.h */,
+				04B9548F1F1DFF1D001B9C53 /* KFMLandscapeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04B9545E1F1C805B001B9C53 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				04B9545F1F1C805B001B9C53 /* FiveTrade.json */,
+				04B954601F1C805B001B9C53 /* kLineForDay.json */,
+				04B954611F1C805B001B9C53 /* kLineForMonth.json */,
+				04B954621F1C805B001B9C53 /* kLineForWeek.json */,
+				04B954631F1C805B001B9C53 /* SZ300033.json */,
+				04B954641F1C805B001B9C53 /* timeLineForDay.json */,
+				04B954651F1C805B001B9C53 /* timeLineForFiveday.json */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		04B9546D1F1C8073001B9C53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B954801F1CB3D7001B9C53 /* KLineModel */,
+				04B954751F1C8DB3001B9C53 /* TimeLineModel */,
+				04B9546E1F1C8088001B9C53 /* KFMStockBasicInfoModel.h */,
+				04B9546F1F1C8088001B9C53 /* KFMStockBasicInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B954711F1C8A37001B9C53 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				04B954721F1C8A73001B9C53 /* KFMTimeLine.h */,
+				04B954731F1C8A73001B9C53 /* KFMTimeLine.m */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		04B954751F1C8DB3001B9C53 /* TimeLineModel */ = {
+			isa = PBXGroup;
+			children = (
+				04B954761F1C8DCA001B9C53 /* KFMTimeLineCoordModel.h */,
+				04B954771F1C8DCA001B9C53 /* KFMTimeLineCoordModel.m */,
+				04B954791F1C8F2D001B9C53 /* KFMTimeLineModel.h */,
+				04B9547A1F1C8F2D001B9C53 /* KFMTimeLineModel.m */,
+			);
+			name = TimeLineModel;
+			sourceTree = "<group>";
+		};
+		04B9547C1F1C90B3001B9C53 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04B9547D1F1C90CA001B9C53 /* KFMTheme.h */,
+				04B9547E1F1C90CA001B9C53 /* KFMTheme.m */,
+				04B954911F1E0334001B9C53 /* KFMCAShapeLayer.h */,
+				04B954921F1E0334001B9C53 /* KFMCAShapeLayer.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04B954801F1CB3D7001B9C53 /* KLineModel */ = {
+			isa = PBXGroup;
+			children = (
+				04B954811F1CB3EB001B9C53 /* KFMKLineModel.h */,
+				04B954821F1CB3EB001B9C53 /* KFMKLineModel.m */,
+				04B954941F1E0B76001B9C53 /* KFMKLineCoordModel.h */,
+				04B954951F1E0B76001B9C53 /* KFMKLineCoordModel.m */,
+			);
+			name = KLineModel;
+			sourceTree = "<group>";
+		};
+		04B9549A1F1EE45B001B9C53 /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				04B9549B1F1EE4B2001B9C53 /* KFMKLineUpFrontView.h */,
+				04B9549C1F1EE4B2001B9C53 /* KFMKLineUpFrontView.m */,
+				04B9549E1F1EF49C001B9C53 /* KFMKLineView.h */,
+				04B9549F1F1EF49C001B9C53 /* KFMKLineView.m */,
+				04B954A11F1EF5B1001B9C53 /* KFMKLine.h */,
+				04B954A21F1EF5B1001B9C53 /* KFMKLine.m */,
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		04B954A41F20AD60001B9C53 /* StockBriefView */ = {
+			isa = PBXGroup;
+			children = (
+				04B954A51F20AD77001B9C53 /* KFMStockBriefView.h */,
+				04B954A61F20AD77001B9C53 /* KFMStockBriefView.m */,
+				04B954A81F20AD87001B9C53 /* KFMStockBriefView.xib */,
+			);
+			path = StockBriefView;
+			sourceTree = "<group>";
+		};
+		04B954AA1F21A342001B9C53 /* KLineBriefView */ = {
+			isa = PBXGroup;
+			children = (
+				04B954AB1F21A359001B9C53 /* KFMKLineBriefView.h */,
+				04B954AC1F21A359001B9C53 /* KFMKLineBriefView.m */,
+				04B954AE1F21A369001B9C53 /* KFMKLineBriefView.xib */,
+			);
+			path = KLineBriefView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B954321F1C3F3E001B9C53 /* KFMStockOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B9544A1F1C3F3F001B9C53 /* Build configuration list for PBXNativeTarget "KFMStockOC" */;
+			buildPhases = (
+				04B9542F1F1C3F3E001B9C53 /* Sources */,
+				04B954301F1C3F3E001B9C53 /* Frameworks */,
+				04B954311F1C3F3E001B9C53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFMStockOC;
+			productName = KFMStockOC;
+			productReference = 04B954331F1C3F3E001B9C53 /* KFMStockOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B9542B1F1C3F3E001B9C53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KFM;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04B954321F1C3F3E001B9C53 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04B9542E1F1C3F3E001B9C53 /* Build configuration list for PBXProject "KFMStockOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B9542A1F1C3F3E001B9C53;
+			productRefGroup = 04B954341F1C3F3E001B9C53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B954321F1C3F3E001B9C53 /* KFMStockOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B954311F1C3F3E001B9C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B954681F1C805B001B9C53 /* kLineForMonth.json in Resources */,
+				04B954661F1C805B001B9C53 /* FiveTrade.json in Resources */,
+				04B954AF1F21A369001B9C53 /* KFMKLineBriefView.xib in Resources */,
+				04B954A91F20AD87001B9C53 /* KFMStockBriefView.xib in Resources */,
+				04B954461F1C3F3F001B9C53 /* LaunchScreen.storyboard in Resources */,
+				04B9546A1F1C805B001B9C53 /* SZ300033.json in Resources */,
+				04B954431F1C3F3F001B9C53 /* Assets.xcassets in Resources */,
+				04B954691F1C805B001B9C53 /* kLineForWeek.json in Resources */,
+				04B954411F1C3F3F001B9C53 /* Main.storyboard in Resources */,
+				04B9546B1F1C805B001B9C53 /* timeLineForDay.json in Resources */,
+				04B954671F1C805B001B9C53 /* kLineForDay.json in Resources */,
+				04B9546C1F1C805B001B9C53 /* timeLineForFiveday.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B9542F1F1C3F3E001B9C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B954591F1C464A001B9C53 /* UIView+Extension.m in Sources */,
+				04B9549D1F1EE4B2001B9C53 /* KFMKLineUpFrontView.m in Sources */,
+				04B9545D1F1C5B3E001B9C53 /* KFMChartViewController.m in Sources */,
+				04B9548D1F1DF058001B9C53 /* NSDate+Category.m in Sources */,
+				04B9543E1F1C3F3F001B9C53 /* ViewController.m in Sources */,
+				04B954501F1C41A8001B9C53 /* KFMSegmentMenu.m in Sources */,
+				04B954701F1C8088001B9C53 /* KFMStockBasicInfoModel.m in Sources */,
+				04B9543B1F1C3F3F001B9C53 /* AppDelegate.m in Sources */,
+				04B9547F1F1C90CA001B9C53 /* KFMTheme.m in Sources */,
+				04B954A01F1EF49C001B9C53 /* KFMKLineView.m in Sources */,
+				04B9548A1F1CB64F001B9C53 /* NSString+Category.m in Sources */,
+				04B954831F1CB3EB001B9C53 /* KFMKLineModel.m in Sources */,
+				04B954961F1E0B76001B9C53 /* KFMKLineCoordModel.m in Sources */,
+				04B954381F1C3F3E001B9C53 /* main.m in Sources */,
+				04B954741F1C8A73001B9C53 /* KFMTimeLine.m in Sources */,
+				04B954AD1F21A359001B9C53 /* KFMKLineBriefView.m in Sources */,
+				04B954781F1C8DCA001B9C53 /* KFMTimeLineCoordModel.m in Sources */,
+				04B954931F1E0334001B9C53 /* KFMCAShapeLayer.m in Sources */,
+				04B9547B1F1C8F2D001B9C53 /* KFMTimeLineModel.m in Sources */,
+				04B954901F1DFF1D001B9C53 /* KFMLandscapeViewController.m in Sources */,
+				04B954991F1EE43A001B9C53 /* UIColor+Category.m in Sources */,
+				04B954A31F1EF5B1001B9C53 /* KFMKLine.m in Sources */,
+				04B954A71F20AD77001B9C53 /* KFMStockBriefView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04B9543F1F1C3F3F001B9C53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B954401F1C3F3F001B9C53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04B954441F1C3F3F001B9C53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B954451F1C3F3F001B9C53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B954481F1C3F3F001B9C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04B954491F1C3F3F001B9C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B9544B1F1C3F3F001B9C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/KQW/swift/daoTest/KFMStockOC/KFMStockOC/PrefixHeader.pch;
+				INFOPLIST_FILE = KFMStockOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KFM.KFMStockOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		04B9544C1F1C3F3F001B9C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/KQW/swift/daoTest/KFMStockOC/KFMStockOC/PrefixHeader.pch;
+				INFOPLIST_FILE = KFMStockOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KFM.KFMStockOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B9542E1F1C3F3E001B9C53 /* Build configuration list for PBXProject "KFMStockOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B954481F1C3F3F001B9C53 /* Debug */,
+				04B954491F1C3F3F001B9C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B9544A1F1C3F3F001B9C53 /* Build configuration list for PBXNativeTarget "KFMStockOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B9544B1F1C3F3F001B9C53 /* Debug */,
+				04B9544C1F1C3F3F001B9C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B9542B1F1C3F3E001B9C53 /* Project object */;
+}

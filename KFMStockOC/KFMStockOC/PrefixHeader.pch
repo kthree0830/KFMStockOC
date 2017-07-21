@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  KFMStockOC
+//
+//  Created by mac on 2017/7/17.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define ktimeLineEntity @"timeLineEntity"
+#define kTimeLineLongpress @"TimeLineLongpress"
+#define kTimeLineUnLongpress @"TimeLineUnLongpress"
+#define kTimeLineChartDidTap @"TimeLineChartDidTap"
+#define kKLineChartLongPress @"KLineChartLongPress"
+#define kKLineChartUnLongPress @"KLineChartUnLongPress"
+#define kKLineUperChartDidTap @"KLineUperChartDidTap"
+
+#import "UIColor+Category.h"
+#import "UIView+Extension.h"
+#import "NSString+Category.h"
+#import "NSDate+Category.h"
+
+#import "KFMStockBasicInfoModel.h"
+#import "KFMKLineModel.h"
+#import "KFMKLineCoordModel.h"
+
+#import "KFMTheme.h"
+#import "KFMTimeLineModel.h"
+
+//三个数最大
+#define kMAX(a,b,c) (a>b?(a>c?a:c):(b>c?b:c))
+//三个数最小
+#define kMIX(a,b,c) (a<b?(a<c?a:c):(b<c?b:c))
+// 屏幕高度
+#define XMGHeight [UIScreen mainScreen].bounds.size.height
+// 屏幕宽度
+#define XMGWidth [UIScreen mainScreen].bounds.size.width
+// 以iPhone5为基准(UI妹纸给你的设计图是iPhone5的),当然你也可以改,但是出图是按照7P(6P)的图片出的,因为大图压缩还是清晰的,小图拉伸就不清晰了,所以只出一套最大的图片即可
+#define XMGiPhone5W 375.0
+#define XMGiPhone5H 667.0
+// 计算比例
+// x比例 1.293750 在iPhone7的屏幕上
+#define XMGScaleX XMGWidth / XMGiPhone5W
+// y比例 1.295775
+#define XMGScaleY XMGHeight / XMGiPhone5H
+// X坐标
+#define LineX(l) l*XMGScaleX
+// Y坐标
+#define LineY(l) l*XMGScaleY
+// 字体
+#define Font(x) [UIFont systemFontOfSize:x*XMGScaleX]
+#define BFont(x) [UIFont boldSystemFontOfSize:x*XMGScaleX]
+
+
+#endif /* PrefixHeader_pch */
