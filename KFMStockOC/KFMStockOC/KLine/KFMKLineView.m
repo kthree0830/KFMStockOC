@@ -9,11 +9,15 @@
 #import "KFMKLineView.h"
 #import "KFMKLine.h"
 #import "KFMKLineUpFrontView.h"
+#import "KFMRef.h"
+#define kNeedRef 1//是否需要侧拉刷新，1为需要，0为不需要
 @interface KFMKLineView ()<UIScrollViewDelegate>
 @property (nonatomic, strong)UIScrollView *scrollView;
 @property (nonatomic, strong)KFMKLine *kLine;
 @property (nonatomic, strong)KFMKLineUpFrontView *upFrontView;
 @property (nonatomic, assign)KFMChartType kLineType;
+
+@property (nonatomic, strong)KFMRef *ref;//刷新控件
 
 @property (nonatomic, strong)KFMTheme *theme;
 
@@ -52,9 +56,21 @@
         [self.scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
         [self addSubview:self.scrollView];
         
+        //侧拉刷新
+        if (kNeedRef) {
+            [_scrollView addSubview:self.ref];
+            [_ref addTarget:self action:@selector(loadData) forControlEvents:UIControlEventTouchUpInside];
+        }
+       
+        
         self.kLine = [[KFMKLine alloc]init];
         self.kLine.kLineType = kLineType;
         [self.scrollView addSubview:self.kLine];
+        
+        
+        self.dataK = [[NSMutableArray alloc]initWithCapacity:0];
+        self.kLine.dataK = [[NSMutableArray alloc]initWithCapacity:0];
+        
         
         self.upFrontView = [[KFMKLineUpFrontView alloc]initWithFrame:self.bounds];
         [self addSubview:self.upFrontView];
@@ -81,7 +97,7 @@
         self.allDataK = [KFMKLineModel getKLineModelArrayWithDic:[self getJsonDataFormFie:jsonFile]].mutableCopy;
         NSArray *tmpDataK = [self.allDataK subarrayWithRange:NSMakeRange(self.allDataK.count - 70, 70)];
         [self configureViewWithData:tmpDataK];
-        
+
         
     }
     return self;
@@ -90,9 +106,20 @@
     [self.scrollView removeObserver:self forKeyPath:@"contentOffset"];
 }
 - (void)configureViewWithData:(NSArray <KFMKLineModel *>*)data {
-    self.dataK = [[NSMutableArray alloc]initWithArray:data];
-    self.kLine.dataK = [[NSMutableArray alloc]initWithArray:data];
-    CGFloat count = data.count;
+    
+    CGFloat count;
+    if (!kNeedRef) {
+        self.dataK = [[NSMutableArray alloc]initWithArray:data];
+        self.kLine.dataK = [[NSMutableArray alloc]initWithArray:data];
+        count = data.count;
+    }else {
+        NSMutableIndexSet *indexes = [NSMutableIndexSet indexSetWithIndexesInRange:NSMakeRange(0, data.count)];
+        [self.dataK insertObjects:data atIndexes:indexes];
+        [self.kLine.dataK insertObjects:data atIndexes:indexes];
+        count = self.dataK.count;
+    }
+
+    
     
     // 总长度
     self.kLineViewWidth = count * self.theme.rCandleWidth + (count + 1) * KFMTheme.candleGap;
@@ -171,6 +198,25 @@
     [self.layer addSublayer:volFrameLayer];
 }
 #pragma mark - events
+- (void)loadData {
+    [_ref beginRefreshing];
+    NSLog(@"开始刷新");
+    //模拟网络加载
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"结束刷新");
+        if (self.dataK.count != self.allDataK.count) {
+            /*
+             self.allDatak应为获得的数据
+             这里if判断应为请求是否成功
+             */
+            self.oldRightOffset = _scrollView.contentSize.width - _scrollView.contentOffset.x;
+        
+        
+            [self configureViewWithData:[self.allDataK subarrayWithRange:NSMakeRange(0, self.allDataK.count - 70)]];
+        }
+        [_ref endRefreshing];
+    });
+}
 - (void)handleLongPressGestureAction:(UILongPressGestureRecognizer *)recognizer {
     if (recognizer.state == UIGestureRecognizerStateBegan || recognizer.state == UIGestureRecognizerStateChanged) {
         CGPoint point = [recognizer locationInView:self.kLine];
@@ -284,8 +330,10 @@
     }
 }
 #pragma mark - scrollViewDelegate
+#if !kNeedRef
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     //用于滑动加载更多 KLine 数据
+    NSLog(@"111");
     if (scrollView.contentOffset.x < 0 && self.dataK.count < self.allDataK.count) {
         self.oldRightOffset = scrollView.contentSize.width - scrollView.contentOffset.x;
         [self configureViewWithData:self.allDataK];
@@ -293,6 +341,7 @@
     
     }
 }
+#endif
 #pragma mark - lazy
 
 - (CGFloat)uperChartHeight {
@@ -312,6 +361,12 @@
         _allDataK = [[NSMutableArray alloc]init];
     }
     return _allDataK;
+}
+- (KFMRef *)ref {
+    if (!_ref) {
+        _ref = [[KFMRef alloc]init];
+    }
+    return _ref;
 }
 #pragma mark - private
 - (NSDictionary *)getJsonDataFormFie:(NSString *)fileName {
