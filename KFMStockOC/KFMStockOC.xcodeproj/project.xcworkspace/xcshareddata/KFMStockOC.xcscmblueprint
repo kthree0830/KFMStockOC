@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E80802B1C4291EDD3F6FD6C92BB5EB2383B0F99A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E80802B1C4291EDD3F6FD6C92BB5EB2383B0F99A" : 9223372036854775807,
+    "B988733099D5BDAF6853FB2A121A8396C047E9D2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AB30BE5F-6404-45B7-9361-F7DEA047E96E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E80802B1C4291EDD3F6FD6C92BB5EB2383B0F99A" : "KFMStockOC\/",
+    "B988733099D5BDAF6853FB2A121A8396C047E9D2" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KFMStockOC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KFMStockOC\/KFMStockOC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kthree0830\/KQW.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B988733099D5BDAF6853FB2A121A8396C047E9D2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kthree0830\/KFMStockOC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E80802B1C4291EDD3F6FD6C92BB5EB2383B0F99A"
+    }
+  ]
+}

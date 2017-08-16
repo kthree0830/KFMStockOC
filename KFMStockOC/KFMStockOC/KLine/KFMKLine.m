@@ -79,7 +79,6 @@
                 
                 CGFloat tempMAMax = kMAX(obj.ma5, obj.ma10, obj.ma20);
                 self.maxMA = self.maxMA > tempMAMax ? self.maxMA : tempMAMax;
-                NSLog(@"%f",self.maxMA);
                 
                 CGFloat tempMAMin = kMIX(obj.ma5, obj.ma10, obj.ma20);
                 self.minMA = self.minMA < tempMAMin ? self.minMA : tempMAMin;
