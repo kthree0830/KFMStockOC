@@ -42,6 +42,9 @@
 		04B954A91F20AD87001B9C53 /* KFMStockBriefView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B954A81F20AD87001B9C53 /* KFMStockBriefView.xib */; };
 		04B954AD1F21A359001B9C53 /* KFMKLineBriefView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B954AC1F21A359001B9C53 /* KFMKLineBriefView.m */; };
 		04B954AF1F21A369001B9C53 /* KFMKLineBriefView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B954AE1F21A369001B9C53 /* KFMKLineBriefView.xib */; };
+		04FC1A781F4420CD00B694B2 /* KFMAcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC1A741F4420CD00B694B2 /* KFMAcView.m */; };
+		04FC1A791F4420CD00B694B2 /* KFMAcView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FC1A751F4420CD00B694B2 /* KFMAcView.xib */; };
+		04FC1A7A1F4420CD00B694B2 /* KFMRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC1A771F4420CD00B694B2 /* KFMRef.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +108,11 @@
 		04B954AB1F21A359001B9C53 /* KFMKLineBriefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMKLineBriefView.h; sourceTree = "<group>"; };
 		04B954AC1F21A359001B9C53 /* KFMKLineBriefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMKLineBriefView.m; sourceTree = "<group>"; };
 		04B954AE1F21A369001B9C53 /* KFMKLineBriefView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFMKLineBriefView.xib; sourceTree = "<group>"; };
+		04FC1A731F4420CD00B694B2 /* KFMAcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMAcView.h; sourceTree = "<group>"; };
+		04FC1A741F4420CD00B694B2 /* KFMAcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMAcView.m; sourceTree = "<group>"; };
+		04FC1A751F4420CD00B694B2 /* KFMAcView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFMAcView.xib; sourceTree = "<group>"; };
+		04FC1A761F4420CD00B694B2 /* KFMRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMRef.h; sourceTree = "<group>"; };
+		04FC1A771F4420CD00B694B2 /* KFMRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMRef.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 		04B954351F1C3F3E001B9C53 /* KFMStockOC */ = {
 			isa = PBXGroup;
 			children = (
+				04FC1A711F4420BD00B694B2 /* Tools */,
 				04B954AA1F21A342001B9C53 /* KLineBriefView */,
 				04B954A41F20AD60001B9C53 /* StockBriefView */,
 				04B9549A1F1EE45B001B9C53 /* KLine */,
@@ -304,6 +313,26 @@
 			path = KLineBriefView;
 			sourceTree = "<group>";
 		};
+		04FC1A711F4420BD00B694B2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				04FC1A721F4420CD00B694B2 /* refresh */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		04FC1A721F4420CD00B694B2 /* refresh */ = {
+			isa = PBXGroup;
+			children = (
+				04FC1A731F4420CD00B694B2 /* KFMAcView.h */,
+				04FC1A741F4420CD00B694B2 /* KFMAcView.m */,
+				04FC1A751F4420CD00B694B2 /* KFMAcView.xib */,
+				04FC1A761F4420CD00B694B2 /* KFMRef.h */,
+				04FC1A771F4420CD00B694B2 /* KFMRef.m */,
+			);
+			path = refresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +403,7 @@
 				04B954411F1C3F3F001B9C53 /* Main.storyboard in Resources */,
 				04B9546B1F1C805B001B9C53 /* timeLineForDay.json in Resources */,
 				04B954671F1C805B001B9C53 /* kLineForDay.json in Resources */,
+				04FC1A791F4420CD00B694B2 /* KFMAcView.xib in Resources */,
 				04B9546C1F1C805B001B9C53 /* timeLineForFiveday.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +418,7 @@
 				04B954591F1C464A001B9C53 /* UIView+Extension.m in Sources */,
 				04B9549D1F1EE4B2001B9C53 /* KFMKLineUpFrontView.m in Sources */,
 				04B9545D1F1C5B3E001B9C53 /* KFMChartViewController.m in Sources */,
+				04FC1A781F4420CD00B694B2 /* KFMAcView.m in Sources */,
 				04B9548D1F1DF058001B9C53 /* NSDate+Category.m in Sources */,
 				04B9543E1F1C3F3F001B9C53 /* ViewController.m in Sources */,
 				04B954501F1C41A8001B9C53 /* KFMSegmentMenu.m in Sources */,
@@ -407,6 +438,7 @@
 				04B954901F1DFF1D001B9C53 /* KFMLandscapeViewController.m in Sources */,
 				04B954991F1EE43A001B9C53 /* UIColor+Category.m in Sources */,
 				04B954A31F1EF5B1001B9C53 /* KFMKLine.m in Sources */,
+				04FC1A7A1F4420CD00B694B2 /* KFMRef.m in Sources */,
 				04B954A71F20AD77001B9C53 /* KFMStockBriefView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,6 +600,7 @@
 				04B9544C1F1C3F3F001B9C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
